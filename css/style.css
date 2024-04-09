@@ -1,0 +1,114 @@
+body {  
+    background-color: #fffff0;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar-ref {
+    color: #fffff1;
+    font-size: 20px;
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 10px 15px;
+    transition: padding 0.3s;
+}
+
+.navbar-ref:hover {
+    background-color: #424549;
+    border-radius: 10px;
+    animation: pulsate 1s infinite alternate;
+    padding: 15px 20px;
+}
+
+.navbar-ul {
+    background-color: #262a43;
+    display: flex;
+    justify-content: center;
+    width: 600px;
+    height: 60px;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.list-inline {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+    padding: 0;
+    list-style-type: none;
+}
+
+.notizie {
+    margin: 40px auto;
+    max-width: 600px;
+    text-align: center;
+}
+
+.notizia {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.notizia h3 {
+    color: #333;
+}
+
+.notizia p {
+    color: #666;
+}
+
+img {
+    height: 300px;
+    width: 500px;
+}
+
+.immagine {
+    margin-left: 36%;
+}
+
+.read-more-btn {
+    background-color: #c0c0c0;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.read-more-btn:hover {
+    background-color: #0056b3;
+}
+
+.additional-content {
+    max-height: 0 !important;
+    overflow: hidden !important;
+    transition: max-height 0.3s ease !important;
+}
+
+.additional-content.show {
+    max-height: 1000px !important;
+    overflow: visible !important;
+}
+
+.github {
+    margin-top: 50px;
+}
+
+.github:hover {
+    animation: pulsate 1s infinite alternate;
+}
+@keyframes pulsate {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
